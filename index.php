@@ -1,7 +1,10 @@
 <?php
 	$file = fopen('src.csv', 'r');
-	$file_str = fgets($file);
-  	$file_array = explode(',', $file_str);
+  for ($i=0; $i < 13; $i++) { 
+	 $file_str = fgets($file); 
+  }
+ 	  $file_array = explode(',', $file_str);
+
 	
 ?>
 
@@ -57,6 +60,10 @@
 
 	<script src="js/jquery.js"></script>
 	<script src="js/materialize.min.js"></script>
+  <script>
+    var arrayBooks = <?=json_encode($file_str);?>;
+    var data = <?=json_encode($file_array);?>;
+  </script>
 	<script src="js/index.js"></script>
 </body>
 </html>
