@@ -1,11 +1,12 @@
 <?php
 	$file = fopen('src.csv', 'r');
-  for ($i=0; $i < 13; $i++) { 
-	 $file_str = fgets($file); 
+  while(!feof($file)) {
+	 $file_str = fgets($file);
+   echo $file_str.'<br>';
   }
- 	  $file_array = explode(',', $file_str);
-
-	
+  $file_array = explode(',', $file_str);
+  
+  fclose($file);
 ?>
 
 
