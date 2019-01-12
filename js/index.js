@@ -4,13 +4,14 @@ $(document).ready(function(){
 getContent();
 
 
+console.log(data);
   function getContent(){
     for (var i = 0; i <= 5; i++) {
       $('body').append(`
         <div class="row content">
           <div class="col-main s6">
             <div class="col-item">
-                <img src="" alt="">
+                <img src=<?php echo $file_array[2]?> alt="">
                 <div class="book-titles">
                   <div class="col-item-author">
                     <?php echo $file_array[4]?>
@@ -23,7 +24,7 @@ getContent();
           </div>
           <div class="col-main s6">
             <div class="col-item">
-                <img src="" alt="">
+                <img src=<?php echo $file_array[2]?> alt="">
                 <div class="book-titles">
                   <div class="col-item-author">
                     <?php echo $file_array[4]?>

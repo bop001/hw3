@@ -5,6 +5,7 @@
 	
 ?>
 
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -53,6 +54,7 @@
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
     </div>
   </div>
+
 	<script src="js/jquery.js"></script>
 	<script src="js/materialize.min.js"></script>
 	<script src="js/index.js"></script>
